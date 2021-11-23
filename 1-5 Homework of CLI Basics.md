@@ -31,33 +31,6 @@
    ```
    #!/bin/bash
    echo "odd-or-even函数开始执行"
-   sleep 1s
-   odd-or-even()
-   {
-     int=$1
-        read -p "请输入:" int
-       
-       if [[ $int =~ ^-?[1-9]\d*$ ]] && [[ $(($int % 2)) = 0 ]];then
-         y=$int
-   	    echo "$y是偶数！"
-       elif [[ $int =~ ^-?[1-9]\d*$ ]] && [[ $(($int % 2)) -ne 0 ]];then
-       echo "$y是奇数！"
-       elif [[ $int = 0 ]];then
-       echo "$y是特殊的偶数！"
-       else
-       echo "请输入一个整数！"
-       fi
-   
-       
-   }
-   odd-or-even
-   sleep 1s
-   echo "odd-or-even函数执行完毕"
-   ```
-   
-   ```
-   #!/bin/bash
-   echo "odd-or-even函数开始执行"
    
    odd-or-even()
    {
@@ -118,7 +91,6 @@
    fi
    }
    next $1
-   
    ```
    
    
@@ -249,5 +221,5 @@ yanyimai
 
 
 
-[^此仓库关联本地E:\gtb-2022-yan-yimai\work-repo\week01\cli homework；关联线上org页面week01仓库]: 
+[^此仓库关联本地E:\gtb-2022-yan-yimai\work-repo\week01\cli homework；关联线上org页面week0]: 
 
