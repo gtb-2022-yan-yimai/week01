@@ -130,6 +130,7 @@
    
    ```
    使用onliner形式
+   awk '{s+=$1} END {print s}' numbers.txt  
    ```
    
    
@@ -221,5 +222,5 @@ yanyimai
 
 
 
-[^此仓库关联本地E:\gtb-2022-yan-yimai\work-repo\week01\cli homework；关联线上org页面week0]: 
+[^此仓库关联本地E:\gtb-2022-yan-yimai\work-repo\week01\cli homework；关联线上org页面week01]: 
 
