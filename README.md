@@ -127,7 +127,7 @@
 5. 一个文件含有 N 行内容，每行的内容都是一个大于等于 0 的整数，无任何空行或其它内容，使用 [one-liner](https://onceupon.github.io/Bash-Oneliner/) 的形式对该文件中的数字求和
 
    ```
-   使用非oneliner形式--失败><
+   使用非oneliner形式--大失败><
    round(10*rand(10))matlab生成一组10✖10的整数，测试。
      
    #!/bin/bash
@@ -143,23 +143,21 @@
                            
                              
    done < numbers.txt
-   for ((i=0;i<${#results[@]};i++))
-   do
-           echo ${results[$i]}
-   done
    
+    temp=`echo  "$line" | tr -cd "[0-9]" `
+    
+    echo $temp 
    
    
    }
    read-and-sum
    
-   num=${#results[@]}   
-   echo $num
+   
    ```
-
+   
    ```
-   使用onliner形式 ><卡住了
-   正在研究中
+   使用onliner形式 
+   https://explainshell.com/
    ```
    
    
