@@ -29,33 +29,8 @@
 
 3. 实现一个名为 `odd-or-even` 的 function，可以用来判断给其提供的第一个参数是奇数还是偶数，奇数时输出 `odd`，偶数时输出 `even`
 
-   ```
-   #!/bin/bash
-   echo "odd-or-even函数开始执行"
-   sleep 1s
-   odd-or-even()
-   {
-     int=$1
-        read -p "请输入:" int
-       
-       if [[ $int =~ ^-?[1-9]\d*$ ]] && [[ $(($int % 2)) = 0 ]];then
-         y=$int
-   	    echo "$y是偶数！"
-       elif [[ $int =~ ^-?[1-9]\d*$ ]] && [[ $(($int % 2)) -ne 0 ]];then
-       echo "$y是奇数！"
-       elif [[ $int = 0 ]];then
-       echo "$y是特殊的偶数！"
-       else
-       echo "请输入一个整数！"
-       fi
+   ![本地运行结果](assets/03.png)
    
-       
-   }
-   odd-or-even
-   sleep 1s
-   echo "odd-or-even函数执行完毕"
-   ```
-
    ```
    #!/bin/bash
    echo "odd-or-even函数开始执行"
@@ -82,10 +57,12 @@
    echo "odd-or-even函数执行完毕"
    echo "输入的参数分别为$@，总数为$#,被函数调用的只有$1，代码正在优化中！"
    ```
-
    
-
+   
+   
 4. 实现一个名为 `next` 的脚本，当在 CLI 里执行 `$ next` （`$`为提示符，不需要输入）时就返回一个整数，第一次返回 1，每执行一次加 1
+
+   ![](assets/02.png)
 
    ```
    #!/bin/bash
@@ -126,6 +103,8 @@
 
 5. 一个文件含有 N 行内容，每行的内容都是一个大于等于 0 的整数，无任何空行或其它内容，使用 [one-liner](https://onceupon.github.io/Bash-Oneliner/) 的形式对该文件中的数字求和
 
+   ![本地运行结果](assets/05.jpg)
+   
    ```
    使用非oneliner形式--大失败><
    round(10*rand(10))matlab生成一组10✖10的整数，测试。
@@ -157,7 +136,7 @@
    
    ```
    使用onliner形式 
-   https://explainshell.com/
+   awk '{s+=$1} END {print s}' numbers.txt 
    ```
    
    
