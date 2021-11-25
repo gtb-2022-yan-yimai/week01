@@ -32,7 +32,7 @@ listfile="$PWD/.tasks/list.txt"
 if [[ $1 = list ]]; then
 
 
-  touch $listfile
+  echo $listfile
 
 fi
 
