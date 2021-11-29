@@ -37,8 +37,14 @@ unmark $1
 function reset(){
 case "$1" in
  reset)
- echo rm -rf $PWD/.tasks/list.txt
+ rm -rf $PWD/.tasks/list.txt
 ;;
 esac
+
+ echo " # To be done" >> $PWD/.tasks/list.txt
+ echo " Empty" >> $PWD/.tasks/list.txt
+ echo " # Completed" >> $PWD/.tasks/list.txt
+ echo " Empty" >> $PWD/.tasks/list.txt
+
 }
 reset $1
