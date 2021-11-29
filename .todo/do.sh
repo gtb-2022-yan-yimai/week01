@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#/mnt/e/gtb-2022-yan-yimai/work-repo/week01/test/.todo
 function todo(){
 
 TODO_DIR="$PWD/.tasks"
